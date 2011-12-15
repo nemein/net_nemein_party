@@ -10,11 +10,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "language"
+msgstr "English"
+
+msgid "label_in_language"
+msgstr "In English"
+
 msgid "title_welcome_to_the_party"
 msgstr "Welcome!"
 
 msgid "title_greeting"
-msgstr "Dear VIP Guest"
+msgstr "DEAR VIP GUEST"
 
 msgid "label_pick_language"
 msgstr "Please select your language to continue the registration."
+
+msgid "label_language"
+msgstr "Language"
+
+msgid "label_rsvp_by"
+msgstr "Please register by ${date}."
+
+msgid "label_firstname"
+msgstr "Firstname:"
+
+msgid "label_lastname"
+msgstr "Lastname:"
+
+msgid "label_email"
+msgstr "Email:"
+
+msgid "label_rsvp"
+msgstr "RSVP:"
+
+msgid "label_further_information"
+msgstr "Further information"
+
+msgid "label_can_not_participate"
+msgstr "I can’t participate"
+
+msgid "label_avec"
+msgstr "Guest (yes / no)"
+
+msgid "label_yes"
+msgstr "Yes"
+
+msgid "label_no"
+msgstr "No"
+
+msgid "label_send"
+msgstr "SEND"
+
+msgid "text_intro"
+msgstr "introduction"
+
+msgid "label_programs"
+msgstr "PROGRAMS"
+
+msgid "text_programs"
+msgstr "programs"
+
+msgid "label_phone"
+msgstr "Phone:"
+
+msgid "title_registration_success"
+msgstr "<h1>The registration was successfully sent.</h1>"
+
+msgid "title_registration_welcome"
+msgstr "<h3>Welcome!</h3>"
+
+msgid "text_registration_follow_up"
+msgstr "Ilmoittautumisen vahvistus ja illan tarkempi ohjelma on lähetetty ilmoittamaanne sähköpostiin."
+
+msgid "title_registration_thank_for_notificaton"
+msgstr "<h3>Thank you for the notification</h3>"

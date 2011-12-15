@@ -1,11 +1,22 @@
-# registration opens on this day
+# registration opens on this day; not used yet
 registration_open: 2011-12-15
 
-# registration closes on this day
+# registration closes on this day; not used yet
 registration_close: 2011-12-31
 
-# languages (order matters)
+# required to register before this day (not localized yet)
+rsvp_by: '12.28.2011'
+
+# contact info
+contact:
+  phone: +358 xxx
+  email: xxx
+
+# languages (the order matters)
 languages:
-  fi_FI
-  sv_SE
-  en_US
+  - fi_FI
+  - sv_SE
+  - en_US
+
+# name of a component if some translations should come from elsewhere
+special:

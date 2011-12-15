@@ -7,8 +7,6 @@ authors:
         url: http://midgard-project.org
 
 requires:
-    midgardmvc_core:
-        - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
     midgardmvc_account:
         - {type: github, user: feri, repository: midgardmvc_account, branch: master}
 
@@ -16,7 +14,7 @@ process_injector: net_nemein_party_injector
 template_injector: net_nemein_party_injector
 
 routes:
-    index_root:
+    index:
         path: /
         controller: net_nemein_party_controllers_index
         action: index
@@ -33,6 +31,13 @@ routes:
             content: nnp-step-2
             root: midgardmvc-show-json
 
+    step2:
+        path: /step2/{$language}
+        controller: net_nemein_party_controllers_index
+        action: language
+        template_aliases:
+            content: nnp-step-2
+
     register:
         path: /nnp:register
         controller: net_nemein_party_controllers_index
@@ -43,10 +48,17 @@ routes:
             content: nnp-step-3
             root: midgardmvc-show-json
 
+    step3:
+        path: /step3/{$attending}
+        controller: net_nemein_party_controllers_index
+        action: register
+        template_aliases:
+            content: nnp-step-3
+
     get_csv:
         path: /nnp:admin/csv
         controller: net_nemein_party_controllers_admin
         action: csv
-        mimetype: text/csv
         template_aliases:
             content: nnp-admin-csv
+            root: nnp-root-csv

@@ -1,1 +1,90 @@
-nnp-step-2
+    <div id="step2">
+        <!-- LEFT SIDE START -->
+        <div id="step2-left">
+            <!-- CONTACT FORM START -->
+            <div id="contact-information-form">
+
+              <p i18n:translate="'label_rsvp_by'">
+                <tal:block i18n:name="date" tal:content="current_component/rsvp_by"></tal:block>
+              </p>
+
+                <form id="contact_information" action="" method="get">
+                    <input type="hidden" name="lang" tal:attributes="value current_component/lang"></input>
+
+                    <div class="form-row">
+                        <label for="firstname" i18n:translate="'label_firstname'"></label>
+                        <input class="contact-information-field" id="firstname" type="text" size="40" value="" name="firstname" />
+                    </div>
+                    <div class="form-row">
+                        <label for="lastname" i18n:translate="'label_lastname'"></label>
+                        <input class="contact-information-field" id="lastname" type="text" size="40" value="" name="lastname" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email" i18n:translate="'label_email'"></label>
+                        <input class="contact-information-field" id="email" type="text" size="40" value="" name="email" />
+                    </div>
+                    <div class="form-row">
+                        <p i18n:translate="'label_rsvp'"></p>
+                        <fieldset class="step-2-fieldset">
+                            <input type="radio" name="rsvp" id="rsvp1" value="1" checked="checked"/>
+                            <label for="rsvp1" i18n:translate="'label_further_information'">Further information</label>
+                            <br/>
+                            <input type="radio" name="rsvp" id="rsvp2" value="0"  />
+                            <label for="rsvp2" i18n:translate="'label_can_not_participate'">Can not participate</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-row guestswitch">
+                        <p i18n:translate="'label_avec'">Avec</p>
+                        <fieldset class="step-2-fieldset">
+                            <input type="radio" name="avec" id="avec1" value="1"/>
+                            <label for="avec1" i18n:translate="'label_yes'">Yes</label>
+                            <input type="radio" name="avec" id="avec2" value="0" checked="checked"/>
+                            <label for="avec2" i18n:translate="'label_no'">No</label>
+                        </fieldset>
+                    </div>
+                    <div class="guest">
+                      <div class="form-row">
+                          <label for="firstname" i18n:translate="'label_firstname'"></label>
+                          <input class="contact-information-field" id="guest_firstname" type="text" size="40" value="" name="guest_firstname" />
+                      </div>
+                      <div class="form-row">
+                          <label for="lastname" i18n:translate="'label_lastname'"></label>
+                          <input class="contact-information-field" id="guest_lastname" type="text" size="40" value="" name="guest_lastname" />
+                      </div>
+                    </div>
+                </form>
+            <input id="register" class="input-submit-button-right" type="button" name="contactinformation" i18n:attributes="value label_send"/>
+            </div>
+            <!-- CONTACT FORM END -->
+        </div>
+        <!-- LEFT END -->
+        <!-- RIGHT START -->
+        <div id="step2-right">
+            <div id="lang-buttons">
+                <tal:block tal:repeat="item current_component/in_languages">
+                <div class="lang-button">
+                    <a class="langchange" tal:attributes="href item/lang_id" tal:content="item/in_language">In English</a>
+                </div>
+                </tal:block>
+            </div>
+            <div id="step2-text-area">
+                <h3 i18n:translate="'title_welcome_to_the_party'">Welcome!</h3>
+                <p tal:content="structure current_component/intro">Introduction</p>
+                <br/>
+                <h3 i18n:translate="'label_programs'">Programs</h3>
+                <p tal:content="structure current_component/programs">xxxx</p>
+                <br/>
+                <h4 i18n:translate="'label_further_information'">Further information</h4>
+                <p>
+                    <span i18n:translate="'label_phone'"></span> <span tal:content="current_component/contact/phone">Phone</span>
+                    <br/>
+                    <span i18n:translate="'label_email'"></span> <span tal:content="current_component/contact/email">Email</span>
+                </p>
+            </div>
+        </div>
+        <!-- RIGHT END -->
+
+        <div id="step2-footer">
+        </div>
+
+    </div>

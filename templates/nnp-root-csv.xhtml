@@ -1,0 +1,25 @@
+<?php
+    $core = midgardmvc_core::get_instance();
+    $items = $core->context->get_item('current_component');
+    if (   array_key_exists('guests', $items)
+        && count($items['guests']))
+    {
+        $core->dispatcher->header('Content-type: text/csv');
+        $guests = $items['guests'];
+
+        foreach($guests as $guest)
+        {
+            $line = '';
+            foreach ($guest as $field)
+            {
+                $line .= $field . ',';
+            }
+            $line = substr($line, 0, -1);
+            echo $line . "\n";
+        }
+    }
+    else
+    {
+        echo "No data available";
+    }
+?>

@@ -10,11 +10,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "language"
+msgstr "Svenska"
+
+msgid "label_in_language"
+msgstr "På Svenska"
+
 msgid "title_welcome_to_the_party"
 msgstr "Välkomna!"
 
 msgid "title_greeting"
-msgstr "Bäster VIP-Gäst"
+msgstr "BÄSTER VIP-GÄST"
 
 msgid "label_pick_language"
 msgstr "Vänligen välj språk för att fortsätta till anmälningsblanketten."
+
+msgid "label_language"
+msgstr "Språk"
+
+msgid "label_rsvp_by"
+msgstr "Osa senast den ${date}."
+
+msgid "label_firstname"
+msgstr "Förnamn:"
+
+msgid "label_lastname"
+msgstr "Efternamn:"
+
+msgid "label_email"
+msgstr "E-post:"
+
+msgid "label_rsvp"
+msgstr "RSVP:"
+
+msgid "label_further_information"
+msgstr "Tilläggsuppgifter"
+
+msgid "label_can_not_participate"
+msgstr "Jag deltar inte"
+
+msgid "label_avec"
+msgstr "Avec (ja / nej)"
+
+msgid "label_yes"
+msgstr "Ja"
+
+msgid "label_no"
+msgstr "Nej"
+
+msgid "label_send"
+msgstr "SÄND"
+
+msgid "text_intro"
+msgstr "introduction"
+
+msgid "label_programs"
+msgstr "PROGRAMS:"
+
+msgid "text_programs"
+msgstr "programs"
+
+msgid "label_phone"
+msgstr "Phone:"
+
+msgid "title_registration_success"
+msgstr "<h1>Anmälningen har sänts.</h1>"
+
+msgid "title_registration_welcome"
+msgstr "<h3>Välkomna!</h3>"
+
+msgid "text_registration_follow_up"
+msgstr "En anmälningsbekräftelse samt närmare uppgifter om kvällens program har sänts till e-postadressen Ni uppgett."
+
+msgid "title_registration_thank_for_notificaton"
+msgstr "<h3>Tack för meddelandet</h3>"

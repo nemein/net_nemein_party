@@ -1,33 +1,23 @@
     <div id="step1">
         <div id="step1-text-area">
-          <tal:block tal:repeat="intro current_component/intro">
-            <h3 tal:content="intro.greeting"></h3>
-            <p tal:content="intro.pick_language"></p>
+          <tal:block tal:repeat="lang current_component/languages">
+          <tal:block tal:define="intro current_component/intro/$lang">
+            <h3 tal:content="intro/greeting"></h3>
+            <p tal:content="intro/pick_language"></p>
           </tal:block>
-
-            <h3>ARVOISA VIP-VIEARAS</h3>
-            <p>Ole hyvä ja valitse kieli ilmoittautumista varten.</p>
-            <h3>BÄSTER VIP-GÄST</h3>
-            <p>Vänligen välj språk för att fortsätta till anmälningsblanketten.</p>
-
-            <h3>DEAR VIP GUEST</h3>
-            <p>Please select your language to continue the registration.</p>
+          </tal:block>
         </div>
         <div id="choose-language">
-            <p>Kieli / Språk / Language</p>
+            <p tal:content="current_component/label_language"></p>
             <fieldset class="step-1-fieldset">
-                <input type="radio" name="chooselanguage" id="submitlang1" value="1"  />
-
-                <label for="submitlang1">Suomi</label>
-                <br />
-                <input type="radio" name="chooselanguage" id="submitlang2" value="2"  />
-                <label for="submitlang2">Svenska</label>
-                <br />
-                <input type="radio" name="chooselanguage" id="submitlang3" value="3"  />
-                <label for="submitlang3">English</label>
-
-                <br />
-                <input class="input-submit-button" type="button" name="chooselanguage" value="OK" id="SubmitQuestion" />
+            <tal:block tal:repeat="lang current_component/languages">
+            <tal:block tal:define="intro current_component/intro/$lang">
+              <input type="radio" name="chooselanguage" id="submitlang1" tal:attributes="value intro/lang_id"/>
+              <label for="submitlang1">${intro/language}</label>
+              <br/>
+            </tal:block>
+            </tal:block>
+              <input class="input-submit-button" type="button" name="chooselanguage" value="OK" id="SubmitQuestion"/>
             </fieldset>
         </div>
     </div>

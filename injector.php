@@ -8,22 +8,12 @@
 class net_nemein_party_injector
 {
     var $mvc = null;
+    var $config = null;
     var $request = null;
 
     public function __construct()
     {
         $this->mvc = midgardmvc_core::get_instance();
-
-        $this->mvc->i18n->set_translation_domain('net_nemein_party');
-
-        $default_language = $this->mvc->configuration->default_language;
-
-        if (! isset($default_language))
-        {
-            $default_language = 'en_US';
-        }
-
-        $this->mvc->i18n->set_language($default_language, false);
     }
 
     /**
@@ -32,7 +22,6 @@ class net_nemein_party_injector
     public function inject_process(midgardmvc_core_request $request)
     {
         $request->add_component_to_chain($this->mvc->component->get('net_nemein_party'), true);
-        $this->mvc->head->set_title($this->mvc->i18n->get('title_welcome_to_the_party'));
     }
 
     /**
@@ -40,6 +29,25 @@ class net_nemein_party_injector
      */
     public function inject_template(midgardmvc_core_request $request)
     {
+        $this->mvc->head->enable_jquery();
+        $this->mvc->head->enable_jquery_ui();
+        $this->add_head_elements();
+    }
+
+     /**
+     * Adds js and css files to head
+     */
+    private function add_head_elements()
+    {
+        $this->mvc->head->add_jsfile(MIDGARDMVC_STATIC_URL . '/net_nemein_party/js/party.js');
+        $this->mvc->head->add_link (
+            array
+            (
+                'rel' => 'stylesheet',
+                'type' => 'text/css',
+                'href' => MIDGARDMVC_STATIC_URL . '/net_nemein_party/css/party.css'
+            )
+        );
     }
 }
 ?>

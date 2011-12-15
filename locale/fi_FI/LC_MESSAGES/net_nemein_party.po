@@ -10,11 +10,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "language"
+msgstr "Suomi"
+
+msgid "label_in_language"
+msgstr "Suomeksi"
+
 msgid "title_welcome_to_the_party"
 msgstr "Tervetuloa!"
 
 msgid "title_greeting"
-msgstr "Arvoisa VIP-Viearas"
+msgstr "ARVOISA VIP-VIEARAS"
 
 msgid "label_pick_language"
 msgstr "Ole hyvä ja valitse kieli ilmoittautumista varten."
+
+msgid "label_language"
+msgstr "Kieli"
+
+msgid "label_rsvp_by"
+msgstr "Vastausta pyydetään ${date} mennessä."
+
+msgid "label_firstname"
+msgstr "Etunimi:"
+
+msgid "label_lastname"
+msgstr "Sukunimi:"
+
+msgid "label_email"
+msgstr "Sähköposti:"
+
+msgid "label_rsvp"
+msgstr "RSVP:"
+
+msgid "label_further_information"
+msgstr "Lisätietoja"
+
+msgid "label_can_not_participate"
+msgstr "En pääse"
+
+msgid "label_avec"
+msgstr "Avec (kyllä / ei)"
+
+msgid "label_yes"
+msgstr "Kyllä"
+
+msgid "label_no"
+msgstr "Ei"
+
+msgid "label_send"
+msgstr "LÄHETÄ"
+
+msgid "text_intro"
+msgstr "introduction"
+
+msgid "label_programs"
+msgstr "OHJELMAT"
+
+msgid "text_programs"
+msgstr "programs"
+
+msgid "label_phone"
+msgstr "Puh:"
+
+msgid "title_registration_success"
+msgstr "<h1>Ilmoittautuminen lähetetty onnistuneesti.</h1>"
+
+msgid "title_registration_welcome"
+msgstr "<h3>Tervetuloa!</h3>"
+
+msgid "text_registration_follow_up"
+msgstr "Ilmoittautumisen vahvistus ja illan tarkempi ohjelma on lähetetty ilmoittamaanne sähköpostiin."
+
+msgid "title_registration_thank_for_notificaton"
+msgstr "<h3>Kiitos ilmoituksesta</h3>"
