@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+
+"Project-Id-Version: net.nemein.party\n"
+"Report-Msgid-Bugs-To:\n"
+"PO-Revision-Date:\n"
+"Last-Translator:\n"
+"Language-Team: Midgard Project <info@midgard-project.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "title_welcome_to_the_party"
+msgstr "Welcome!"
+
+msgid "title_greeting"
+msgstr "Dear VIP Guest"
+
+msgid "label_pick_language"
+msgstr "Please select your language to continue the registration."

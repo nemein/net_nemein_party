@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+    <type name="net_nemein_party_registration" table="net_nemein_party_registration" extends="midgardmvc_account">
+        <property name="parent" type="guid">
+            <description>GUID of person who brings this person (avec)</description>
+        </property>
+    </type>
+</Schema>

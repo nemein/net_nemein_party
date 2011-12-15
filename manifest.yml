@@ -1,0 +1,52 @@
+version: 0.1
+
+authors:
+    ferenc:
+        name: Ferenc Szekely
+        email: ferenc.szekely@gmail.com
+        url: http://midgard-project.org
+
+requires:
+    midgardmvc_core:
+        - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
+    midgardmvc_account:
+        - {type: github, user: feri, repository: midgardmvc_account, branch: master}
+
+process_injector: net_nemein_party_injector
+template_injector: net_nemein_party_injector
+
+routes:
+    index_root:
+        path: /
+        controller: net_nemein_party_controllers_index
+        action: index
+        template_aliases:
+            content: nnp-step-1
+
+    language:
+        path: /nnp:language
+        controller: net_nemein_party_controllers_index
+        action: language
+        root_only: true
+        mimetype: application/json
+        template_aliases:
+            content: nnp-step-2
+            root: midgardmvc-show-json
+
+    register:
+        path: /nnp:register
+        controller: net_nemein_party_controllers_index
+        action: register
+        root_only: true
+        mimetype: application/json
+        template_aliases:
+            content: nnp-step-3
+            root: midgardmvc-show-json
+
+    get_csv:
+        path: /nnp:admin/csv
+        controller: net_nemein_party_controllers_admin
+        action: csv
+        mimetype: text/csv
+        template_aliases:
+            content: nnp-admin-csv

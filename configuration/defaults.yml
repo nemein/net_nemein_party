@@ -1,0 +1,11 @@
+# registration opens on this day
+registration_open: 2011-12-15
+
+# registration closes on this day
+registration_close: 2011-12-31
+
+# languages (order matters)
+languages:
+  fi_FI
+  sv_SE
+  en_US
