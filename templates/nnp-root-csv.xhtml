@@ -1,12 +1,11 @@
 <?php
+    $output = '';
     $core = midgardmvc_core::get_instance();
     $items = $core->context->get_item('current_component');
     if (   array_key_exists('guests', $items)
         && count($items['guests']))
     {
-        $core->dispatcher->header('Content-type: text/csv');
         $guests = $items['guests'];
-
         foreach($guests as $guest)
         {
             $line = '';
@@ -15,11 +14,19 @@
                 $line .= $field . ',';
             }
             $line = substr($line, 0, -1);
-            echo $line . "\n";
+            $output .= $line . "\n";
         }
+        $core->dispatcher->header('Content-Description: File Transfer');
+        $core->dispatcher->header('Content-Disposition: attachment; filename=registrations.csv');
+        $core->dispatcher->header('Content-Type: text/csv');
+        $core->dispatcher->header('Content-Transfer-Encoding: 7bit');
     }
     else
     {
-        echo "No data available";
+        $core->dispatcher->header('Content-type: text/text');
+        $output = "No data available";
     }
+
+    $core->dispatcher->header('Content-Length: ' . strlen($output));
+    echo $output;
 ?>
