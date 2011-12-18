@@ -157,6 +157,11 @@ class net_nemein_party_controllers_index extends midgardmvc_core_controllers_bas
      */
     public function get_register(array $args)
     {
+        if (array_key_exists('lang', $_POST))
+        {
+            $this->mvc->i18n->set_language($_POST['lang'], false);
+        }
+
         $component = $this->component;
         if (strlen($this->mvc->configuration->special))
         {
