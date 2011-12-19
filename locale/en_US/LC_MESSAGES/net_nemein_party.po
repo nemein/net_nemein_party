@@ -77,7 +77,7 @@ msgid "title_registration_success"
 msgstr "<h1>The registration was successfully sent.</h1>"
 
 msgid "title_registration_welcome"
-msgstr "<h3>Welcome!</h3>"
+msgstr "<h3>Welcome to celebrate Stockmann’s 150th Anniversary!</h3>"
 
 msgid "text_registration_follow_up"
 msgstr "Ilmoittautumisen vahvistus ja illan tarkempi ohjelma on lähetetty ilmoittamaanne sähköpostiin."
