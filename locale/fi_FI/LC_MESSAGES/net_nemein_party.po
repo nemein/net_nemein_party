@@ -20,7 +20,7 @@ msgid "title_welcome_to_the_party"
 msgstr "Tervetuloa!"
 
 msgid "title_greeting"
-msgstr "ARVOISA VIP-VIEARAS"
+msgstr "ARVOISA VIP-VIERAS"
 
 msgid "label_pick_language"
 msgstr "Ole hyvä ja valitse kieli ilmoittautumista varten."
@@ -44,13 +44,13 @@ msgid "label_rsvp"
 msgstr "RSVP:"
 
 msgid "label_further_information"
-msgstr "Lisätietoja"
+msgstr "Osallistun"
 
 msgid "label_can_not_participate"
 msgstr "En pääse"
 
 msgid "label_avec"
-msgstr "Avec (kyllä / ei)"
+msgstr "Avec"
 
 msgid "label_yes"
 msgstr "Kyllä"
