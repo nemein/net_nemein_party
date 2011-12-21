@@ -44,7 +44,7 @@ msgid "label_rsvp"
 msgstr "RSVP:"
 
 msgid "label_further_information"
-msgstr "LISÄTIETOJA"
+msgstr "Lisätietoja"
 
 msgid "label_i_will_participate"
 msgstr "Osallistun"
