@@ -46,7 +46,7 @@ msgstr "RSVP:"
 msgid "label_further_information"
 msgstr "Tilläggsuppgifter"
 
-msgid "label_i_will_particiapte"
+msgid "label_i_will_participate"
 msgstr "Jag delta"
 
 msgid "label_can_not_participate"
