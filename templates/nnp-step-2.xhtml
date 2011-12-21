@@ -3,14 +3,8 @@
         <div id="step2-left">
             <!-- CONTACT FORM START -->
             <div id="contact-information-form">
-
-              <p i18n:translate="'label_rsvp_by'">
-                <tal:block i18n:name="date" tal:content="current_component/rsvp_by"></tal:block>
-              </p>
-
                 <form id="contact_information" action="" method="get">
                     <input type="hidden" name="lang" tal:attributes="value current_component/lang"></input>
-
                     <div class="form-row">
                         <label for="firstname" i18n:translate="'label_firstname'"></label>
                         <input class="contact-information-field" id="firstname" type="text" size="40" value="" name="firstname" />
@@ -68,7 +62,6 @@
                 </tal:block>
             </div>
             <div id="step2-text-area">
-                <h3 i18n:translate="'title_welcome_to_the_party'">Welcome!</h3>
                 <p tal:content="structure current_component/intro">Introduction</p>
                 <br/>
                 <h4 i18n:translate="'label_further_information'">Further information</h4>
