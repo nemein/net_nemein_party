@@ -44,6 +44,9 @@ msgid "label_rsvp"
 msgstr "RSVP:"
 
 msgid "label_further_information"
+msgstr "Further information"
+
+msgid "label_i_will_participate"
 msgstr "I will participate"
 
 msgid "label_can_not_participate"
