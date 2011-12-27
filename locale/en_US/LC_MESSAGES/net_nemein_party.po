@@ -89,4 +89,4 @@ msgid "title_registration_thank_for_notificaton"
 msgstr "<h3>Thank you for the notification</h3>"
 
 msgid "text_missing_fields"
-msgstr "Et täyttänyt kaikkia pakollisia kenttiä. Täytä vielä punaisella merkityt kentät ja paina lähetä painiketta."
+msgstr "Please fill in all the required fields and press Send button again."
