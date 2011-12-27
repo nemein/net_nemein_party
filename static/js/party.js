@@ -77,7 +77,7 @@ jQuery(document).ready(function()
           jQuery('div#main').html(json.page);
         },
         error: function(jqXHR, textStatus, errorThrown) {
-          console.log('error');
+          //console.log('error');
         }
       });
     }
@@ -88,10 +88,10 @@ jQuery(document).ready(function()
    */
   function postRegistration()
   {
-    if (jQuery('input#firstname').val() || jQuery('input#lastname').val() || jQuery('input#email').val())
+    if (jQuery('input#firstname').val() && jQuery('input#lastname').val() && jQuery('input#email').val())
     {
       var data = jQuery('form#contact_information').serialize();
-      console.log('send: ' + data);
+      //console.log('send: ' + data);
 
       jQuery.ajax({
         url: '/nnp:register',
@@ -102,13 +102,13 @@ jQuery(document).ready(function()
           jQuery('div#main').html(json.page);
         },
         error: function(jqXHR, textStatus, errorThrown) {
-          console.log('error');
+          //console.log('error');
         }
       });
     }
     else
     {
-      console.log('missing name or email');
+      //console.log('missing name or email');
     }
   }
 });
