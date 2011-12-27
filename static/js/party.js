@@ -93,6 +93,15 @@ jQuery(document).ready(function()
       var data = jQuery('form#contact_information').serialize();
       //console.log('send: ' + data);
 
+      // remove the error classes, if they were added
+      jQuery('input#firstname').removeClass('error');
+      jQuery('input#lastname').removeClass('error');
+      jQuery('input#email').removeClass('error');
+      if (! jQuery('div.form-row.error').hasClass('hidden'))
+      {
+        jQuery('div.errormsg').addClass('hidden');
+      }
+
       jQuery.ajax({
         url: '/nnp:register',
         type: 'POST',
@@ -108,7 +117,20 @@ jQuery(document).ready(function()
     }
     else
     {
-      //console.log('missing name or email');
+      if (jQuery('input#firstname').val() == '')
+      {
+        jQuery('input#firstname').addClass('error');
+      }
+      if (jQuery('input#lastname').val() == '')
+      {
+        jQuery('input#lastname').addClass('error');
+      }
+      if (jQuery('input#email').val() == '')
+      {
+        jQuery('input#email').addClass('error');
+      }
+      // show the error message
+      jQuery('div.errormsg').show('slow');
     }
   }
 });

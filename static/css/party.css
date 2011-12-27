@@ -1,3 +1,11 @@
+.hidden {
+display: none;
+}
+
 div.guest {
 display: none;
+}
+
+div.errormsg {
+color: red;
 }

@@ -87,3 +87,6 @@ msgstr "Ilmoittautumisen vahvistus ja illan tarkempi ohjelma on lähetetty ilmoi
 
 msgid "title_registration_thank_for_notificaton"
 msgstr "<h3>Kiitos ilmoituksesta</h3>"
+
+msgid "text_missing_fields"
+msgstr "Et täyttänyt kaikkia pakollisia kenttiä. Täytä vielä punaisella merkityt kentät ja paina lähetä painiketta."

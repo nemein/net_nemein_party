@@ -5,6 +5,7 @@
             <div id="contact-information-form">
                 <form id="contact_information" action="" method="get">
                     <input type="hidden" name="lang" tal:attributes="value current_component/lang"></input>
+                    <div class="errormsg hidden" i18n:translate="'text_missing_fields'"></div>
                     <div class="form-row">
                         <label for="firstname" i18n:translate="'label_firstname'"></label>
                         <input class="contact-information-field" id="firstname" type="text" size="40" value="" name="firstname" />
