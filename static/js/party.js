@@ -121,13 +121,25 @@ jQuery(document).ready(function()
       {
         jQuery('input#firstname').addClass('error');
       }
+      else
+      {
+        jQuery('input#firstname').removeClass('error');
+      }
       if (jQuery('input#lastname').val() == '')
       {
         jQuery('input#lastname').addClass('error');
       }
+      else
+      {
+        jQuery('input#lastname').removeClass('error');
+      }
       if (jQuery('input#email').val() == '')
       {
         jQuery('input#email').addClass('error');
+      }
+      else
+      {
+        jQuery('input#email').removeClass('error');
       }
       // show the error message
       jQuery('div.errormsg').show('slow');
