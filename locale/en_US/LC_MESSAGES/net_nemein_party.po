@@ -32,10 +32,10 @@ msgid "label_rsvp_by"
 msgstr "Please register by ${date}."
 
 msgid "label_firstname"
-msgstr "Firstname:"
+msgstr "First name:"
 
 msgid "label_lastname"
-msgstr "Lastname:"
+msgstr "Last name:"
 
 msgid "label_email"
 msgstr "Email:"
