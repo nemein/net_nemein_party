@@ -12,8 +12,8 @@
             <fieldset class="step-1-fieldset">
             <tal:block tal:repeat="lang current_component/languages">
             <tal:block tal:define="intro current_component/intro/$lang">
-              <input type="radio" name="chooselanguage" id="submitlang1" tal:attributes="value intro/lang_id"/>
-              <label for="submitlang1">${intro/language}</label>
+              <input type="radio" name="chooselanguage" tal:attributes="id intro/lang_id; value intro/lang_id"/>
+              <label tal:attributes="for intro/lang_id">${intro/language}</label>
               <br/>
             </tal:block>
             </tal:block>
