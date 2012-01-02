@@ -14,7 +14,7 @@ msgid "language"
 msgstr "Svenska"
 
 msgid "label_in_language"
-msgstr "På Svenska"
+msgstr "På svenska"
 
 msgid "title_welcome_to_the_party"
 msgstr "Välkomna!"
@@ -47,7 +47,7 @@ msgid "label_further_information"
 msgstr "Vi ber Er ta med inbjudan när Ni anländer till festen."
 
 msgid "label_i_will_participate"
-msgstr "Jag delta"
+msgstr "Jag deltar"
 
 msgid "label_can_not_participate"
 msgstr "Jag deltar inte"
