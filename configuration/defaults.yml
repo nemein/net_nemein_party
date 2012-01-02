@@ -1,8 +1,11 @@
 # registration opens on this day; not used yet
-registration_open: 2011-12-15
+registration_open: 2012-01-03
 
 # registration closes on this day; not used yet
-registration_close: 2011-12-31
+registration_close: 2012-12-31
+
+# flag whether avec name required
+avec_name_required: false
 
 # required to register before this day (not localized yet)
 rsvp_by: '12.28.2011'

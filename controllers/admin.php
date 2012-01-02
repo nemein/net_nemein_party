@@ -67,6 +67,7 @@ class net_nemein_party_controllers_admin extends midgardmvc_core_controllers_bas
             $this->data['guests']['header'][] = 'lastname';
             $this->data['guests']['header'][] = 'email';
             $this->data['guests']['header'][] = 'attending';
+            $this->data['guests']['header'][] = 'avec';
             $this->data['guests']['header'][] = 'avec_firstname';
             $this->data['guests']['header'][] = 'avec_lastname';
             $this->data['guests']['header'][] = 'registered';
@@ -96,6 +97,7 @@ class net_nemein_party_controllers_admin extends midgardmvc_core_controllers_bas
                 $this->data['guests'][$guest->guid]['lastname'] = $guest->lastname;
                 $this->data['guests'][$guest->guid]['email'] = $guest->email;
                 $this->data['guests'][$guest->guid]['attending'] = ($guest->attending) ? 'yes' : 'no';
+                $this->data['guests'][$guest->guid]['avec'] = ($guest->avec) ? 'yes' : 'no';
                 $this->data['guests'][$guest->guid]['avec_firstname'] = $avec_firstname;
                 $this->data['guests'][$guest->guid]['avec_lastname'] = $avec_lastname;
                 $this->data['guests'][$guest->guid]['registered'] = $guest->metadata->created->format('Y-m-d H:i:s');

@@ -116,6 +116,7 @@ class net_nemein_party_controllers_index extends midgardmvc_core_controllers_bas
 
         $this->data['intro'] = $this->mvc->i18n->get('text_intro', $component);
         $this->data['programs'] = $this->mvc->i18n->get('text_programs', $component);
+        $this->data['avec_name_required'] = $this->mvc->configuration->avec_name_required;
 
         $this->data['in_languages'] = array();
 
@@ -202,13 +203,15 @@ class net_nemein_party_controllers_index extends midgardmvc_core_controllers_bas
             $registration->lastname = $_POST['lastname'];
             $registration->email = $_POST['email'];
             $registration->attending = $_POST['rsvp'];
+            $registration->avec = $_POST['avec'];
 
             $retval = $registration->create();
 
             if ($retval)
             {
                 // check if had avec
-                if ($_POST['avec'])
+                if (   $_POST['avec']
+                    && $this->mvc->configuration->avec_name_required == true)
                 {
                     $guest = new net_nemein_party_registration();
                     $guest->firstname = $_POST['guest_firstname'];
@@ -217,10 +220,7 @@ class net_nemein_party_controllers_index extends midgardmvc_core_controllers_bas
 
                     $retval = $guest->create();
                 }
-            }
 
-            if ($retval)
-            {
                 // set the response page
                 $rsvp = (int) $_POST['rsvp'];
                 $this->data['page'] = $this->mvc->templating->dynamic_load('net_nemein_party', 'step3', array('attending' => $rsvp), true);

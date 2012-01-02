@@ -37,7 +37,7 @@
                             <label for="avec2" i18n:translate="'label_no'">No</label>
                         </fieldset>
                     </div>
-                    <div class="guest">
+                    <div class="guest" tal:condition="true: current_component/avec_name_required">
                       <div class="form-row">
                           <label for="firstname" i18n:translate="'label_firstname'"></label>
                           <input class="contact-information-field" id="guest_firstname" type="text" size="40" value="" name="guest_firstname" />

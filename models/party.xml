@@ -4,8 +4,11 @@
         <property name="parent" type="guid">
             <description>GUID of person who brings this person (avec)</description>
         </property>
+        <property name="avec" type="boolean">
+            <description>Flag whether the guest will have others to come along</description>
+        </property>
         <property name="attending" type="boolean">
-            <description>Flag whether the gues will attend or not</description>
+            <description>Flag whether the guest will attend or not</description>
         </property>
     </type>
 </Schema>
