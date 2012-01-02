@@ -44,7 +44,7 @@ msgid "label_rsvp"
 msgstr "RSVP:"
 
 msgid "label_further_information"
-msgstr "Tilläggsuppgifter"
+msgstr "Vi ber Er ta med inbjudan när Ni anländer till festen."
 
 msgid "label_i_will_participate"
 msgstr "Jag delta"
