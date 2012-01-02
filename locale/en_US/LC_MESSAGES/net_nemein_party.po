@@ -47,10 +47,10 @@ msgid "label_further_information"
 msgstr "Further information"
 
 msgid "label_i_will_participate"
-msgstr "I will participate"
+msgstr "I will be attending"
 
 msgid "label_can_not_participate"
-msgstr "I can’t participate"
+msgstr "I am unable to attend"
 
 msgid "label_avec"
 msgstr "Guest"
@@ -89,4 +89,4 @@ msgid "title_registration_thank_for_notificaton"
 msgstr "<h3>Thank you for the notification</h3>"
 
 msgid "text_missing_fields"
-msgstr "Please fill in all the required fields and press Send button again."
+msgstr "Please fill in all the required fields and press the Send button again."
