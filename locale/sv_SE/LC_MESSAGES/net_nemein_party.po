@@ -89,4 +89,4 @@ msgid "title_registration_thank_for_notificaton"
 msgstr "<h3>Tack för meddelandet</h3>"
 
 msgid "text_missing_fields"
-msgstr "Vänligen fyll i alla obligatoriska fält och klicka på skicka-knappen igen."
+msgstr "Vänligen fyll i alla fält och klicka på Sänd igen."
